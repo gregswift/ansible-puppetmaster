@@ -1,0 +1,5 @@
+[epel]
+name=Extra Packages for Enterprise Linux - $basearch
+baseurl=http://mirror.rackspace.com/epel/$releasever/$basearch
+enabled=1
+gpgcheck=0

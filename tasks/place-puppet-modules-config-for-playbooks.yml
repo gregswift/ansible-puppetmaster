@@ -1,0 +1,4 @@
+---
+- name: Populate vars/puppet_modules.yml
+  template: src=../templates/config.yml.j2 dest=${this_playbook.dir}/vars/puppet_modules.yml
+  

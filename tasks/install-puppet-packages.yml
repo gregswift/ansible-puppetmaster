@@ -1,0 +1,10 @@
+---
+- name: Install all the puppet bits
+  local_action: yum name=${item} state=installed
+  with_items:
+    - puppet
+    - puppetserver
+    - puppetdb
+    - puppetdb-terminus
+    - facter
+    - hiera

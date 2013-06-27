@@ -1,0 +1,12 @@
+#!/usr/bin/ansible-playbook
+---
+- hosts: puppetmaster
+  vars_files:
+    - "vars/config.yml"
+  tasks:
+    - include: tasks/add-epel-repo.yml
+    - include: tasks/install-ansible-packages.yml
+    - include: tasks/checkout-this-playbook.yml
+    - include: tasks/add-simple-inventory-file.yml
+    - include: tasks/place-puppet-modules-config-for-playbooks.yml
+    - include: tasks/run-main-playbook.yml

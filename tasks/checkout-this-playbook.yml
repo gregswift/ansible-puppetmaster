@@ -1,0 +1,8 @@
+---
+- name: Create base directory structure
+  file: path=${this_playbook.dir} state=directory owner=root group=root recurse=yes
+
+- name: Checkout puppetmaster role playbook
+  git: repo=${this_playbook.repo}
+       dest=${this_playbook.dir}
+       version=${this_playbook.version}

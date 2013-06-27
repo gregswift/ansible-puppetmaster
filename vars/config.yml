@@ -1,0 +1,14 @@
+this_playbook:
+  repo: https://github.rackspace.com/cloud-integration-ops/ansible-role-puppetmaster
+  dir: /etc/ansible/playbooks/roles/puppetmaster
+  version: master
+puppet_modules:
+  stdlib:
+    repo: https://github.com/puppetlabs/puppetlabs-stdlib
+    version: 4.x
+  role:
+    repo: https://github.rackspace.com/cloud-integration-ops/ci-puppet-roles
+    version: staging
+  repo:
+    repo: https://github.rackspace.com/cloud-integration-ops/puppet-repo
+    version: master

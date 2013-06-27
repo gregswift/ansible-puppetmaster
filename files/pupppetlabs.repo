@@ -1,0 +1,6 @@
+[puppetlabs-products]
+name=Puppet Labs Products EL $releasever - $basearch
+baseurl=http://yum.puppetlabs.com/el/$releasever/products/$basearch/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-puppetlabs
+enabled=1
+gpgcheck=1
