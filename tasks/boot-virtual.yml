@@ -1,0 +1,8 @@
+---
+- name: Create virtual in iNova
+  local_action: inova name=${puppetmaster.name} flavor=${puppetmaster.flavor} image=${puppetmaster.image} wait=yes state=present
+  when: puppetmaster.type == 'inova' 
+
+#- name: Create virtual in KVM
+#  local_action: virt create name=${puppetmaster.name}  wait=yes state=present
+#  when: puppetmaster.type == 'kvm'
