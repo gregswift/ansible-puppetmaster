@@ -1,6 +1,7 @@
 #!/usr/bin/ansible-playbook
 ---
 - hosts: puppetmaster
+  user: root
   vars_files:
     - "vars/config.yml"
   tasks:
