@@ -5,6 +5,7 @@
   vars_files:
     - "vars/config.yml"
   tasks:
+    - include: tasks/boot-virtual.yml
     - include: tasks/add-epel-repo.yml
     - include: tasks/install-ansible-packages.yml
     - include: tasks/checkout-this-playbook.yml
