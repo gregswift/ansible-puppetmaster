@@ -1,6 +1,6 @@
 ---
 - name: Place hourly cron job
-  file: src=${this_playbook.dir}/puppetmaster.yml target=/etc/cron.hourly/ansible-puppetmaster owner=root group=root mode=0700
+  file: src=${this_playbook.dir}/puppetmaster.yml dest=/etc/cron.hourly/ansible-puppetmaster owner=root group=root mode=0700
 
 - name: Run the main playbook
   action: command /etc/cron.hourly/ansible-puppetmaster
