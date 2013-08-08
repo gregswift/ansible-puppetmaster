@@ -1,10 +1,10 @@
 this_playbook:
-  repo: https://github.rackspace.com/cloud-integration-ops/ansible-role-puppetmaster
-  dir: /etc/ansible/playbooks/roles/puppetmaster
+  repo: https://github.com/gregswift/ansible-puppetmaster
+  dir: /etc/ansible/playbooks/puppetmaster
   version: master
 inova:
 puppetmaster:
-  name: puppet-n01.play.us.ci.rackspace.net
+  name: puppet.nytefyre.net
   type: existing
   flavor: 3
   image: blah
