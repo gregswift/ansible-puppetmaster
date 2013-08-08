@@ -1,5 +1,5 @@
 ---
 - name: Install all the ansible bits
-  local_action: yum name=${item} state=installed
+  action: yum name=${item} state=installed
   with_items:
     - ansible

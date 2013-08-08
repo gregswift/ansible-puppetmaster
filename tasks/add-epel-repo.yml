@@ -1,6 +1,6 @@
 ---
 - name: Place base epel yum repo file
-  local_action: copy src=../files/epel.repo dest=/etc/yum.repos.d/epel.repo
+  action: copy src=../files/epel.repo dest=/etc/yum.repos.d/epel.repo
 
 - name: Install the epel release package to get all the proper repos
-  local_action: yum name=epel-release state=latest
+  action: yum name=epel-release state=latest
