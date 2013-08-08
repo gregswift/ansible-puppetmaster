@@ -1,0 +1,3 @@
+#!/bin/sh
+
+/etc/ansible/playbooks/puppetmaster/puppetmaster.yml
