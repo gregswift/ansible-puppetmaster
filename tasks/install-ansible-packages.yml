@@ -3,3 +3,4 @@
   action: yum name=${item} state=installed
   with_items:
     - ansible
+    - git-all
