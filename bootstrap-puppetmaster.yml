@@ -8,6 +8,7 @@
     - include: tasks/boot-virtual.yml
     - include: tasks/add-epel-repo.yml
     - include: tasks/install-ansible-packages.yml
+    - include: tasks/setup-ansible-service-user.yml
     - include: tasks/checkout-this-playbook.yml
     - include: tasks/add-simple-inventory-file.yml
     - include: tasks/place-puppet-modules-config-for-playbooks.yml

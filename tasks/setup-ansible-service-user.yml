@@ -1,0 +1,15 @@
+---
+- name: Add ansible service user with ssh key
+  user: name=ansible
+        comment='Ansible Service User'
+        group=nobody
+        system=yes 
+        home=/etc/ansible
+        createhome=no
+        generate_ssh_key=yes
+
+- name: Set ansible public key as authorized
+  authorized_key: user=ansible key="{{ lookup('file', '/etc/ansible/.ssh/id_rsa.pub') }}"
+
+- name: Enable ansible service account passwordless sudo
+  copy: src=../files/sudoers dest=/etc/sudoers.d/ansible owner=root group=root mode=0600
