@@ -1,6 +1,7 @@
 #!/usr/bin/ansible-playbook
 ---
 - hosts: puppetmaster
+  connection: local
   vars_files:
     - "vars/config.yml"
     - "vars/puppet_modules.yml"
