@@ -4,7 +4,7 @@
   with_items:
     - puppetlabs-release
     - puppet
-    - puppetserver
+    - puppet-server
     - puppetdb
     - puppetdb-terminus
     - facter
