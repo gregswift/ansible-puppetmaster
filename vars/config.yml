@@ -24,4 +24,4 @@ puppet_modules:
     repo:
         repo: https://github.rackspace.com/cloud-integration-ops/puppet-repo
         version: master
-        update: false
+        update: no
