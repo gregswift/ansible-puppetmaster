@@ -9,7 +9,7 @@
     - include: tasks/add-puppetlabs-repo.yml
     - include: tasks/install-puppet-packages.yml
     - include: tasks/configure-puppetdb.yml
-#    - include: tasks/configure-hiera.yml
+    - include: tasks/configure-hiera.yml
 #    - include: tasks/configure-puppetmaster.yml
 #    - include: tasks/load-puppet-modules.yml
 #    - include: tasks/initialize-puppet-services.yml
