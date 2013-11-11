@@ -1,0 +1,6 @@
+---
+- name: Place Hiera config file
+  local_action: copy src=../files/hiera.yaml dest=/etc/puppet/hiera.yaml
+
+- name: Checkout Hiera data
+  local_action: git repo={{ hiera.repo }} dest={{ hiera.dir }} update={{ hiera.update }}

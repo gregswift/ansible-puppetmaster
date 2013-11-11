@@ -8,6 +8,11 @@ puppetmaster:
   type: existing
   flavor: 3
   image: blah
+hiera:
+  repo: https://github.rackspace.com/cloud-integration-ops/hiera-data
+  dir: /var/lib/hiera
+  version: master
+  update: yes
 puppet_modules:
   prod:
     stdlib:
