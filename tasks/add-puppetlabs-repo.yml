@@ -1,6 +1,6 @@
 ---
 - name: Place base puppetlabs yum repo file
-  local_action: copy src=../files/puppetlabs.repo dest=/etc/yum.repos.d/puppetlabs.repo
+  local_action: copy src=../files/puppetlabs.repo dest=/etc/yum.repos.d/puppetlabs.repo force=no
 
 - name: Install the puppetlabs release package to get all the proper repos
   local_action: yum name=puppetlabs-release state=latest
